@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="198dp"
+        android:text="MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/constell_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="goConstellation"
+        android:text="Constellation activity"
+        app:layout_constraintStart_toStartOf="@+id/main_btn"
+        app:layout_constraintTop_toBottomOf="@+id/main_btn" />
+
+    <Button
+        android:id="@+id/name_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="84dp"
+        android:text="Name Activity"
+        app:layout_constraintEnd_toEndOf="@+id/constell_btn"
+        app:layout_constraintTop_toBottomOf="@+id/constell_btn" />
+
+    <Button
+        android:id="@+id/result_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="ResultActivity"
+        app:layout_constraintStart_toStartOf="@+id/name_btn"
+        app:layout_constraintTop_toBottomOf="@+id/name_btn" />
+
+    <Button
+        android:id="@+id/callweb_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="41dp"
+        android:onClick="callWeb"
+        android:text="CALL WEB"
+        app:layout_constraintStart_toStartOf="@+id/result_btn"
+        app:layout_constraintTop_toBottomOf="@+id/result_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
